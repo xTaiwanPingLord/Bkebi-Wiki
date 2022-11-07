@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <link rel="icon" href="media/favicon.ico">
+
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,11 +10,9 @@
   <meta name="description" content="">
   <title></title>
 
-  <!-- Themes (light + dark) -->
-  <link rel="stylesheet" media="(prefers-color-scheme: dark)"
-    href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
-  <link rel="stylesheet" media="(prefers-color-scheme: light)"
-    href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple.css">
+  <!-- Theme: Simple Dark -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
+  <link rel="stylesheet" href="theme.css">
 
 </head>
 
@@ -23,8 +22,43 @@
   <script>
     // Docsify Configuration
     window.$docsify = {
-      loadSidebar: true
+      loadSidebar: true,
+      loadNavbar: true,
+      coverpage: ['/', '/zh-tw/'],
+      defaultTheme: 'dark',
+      'flexible-alerts': {
+        note: {
+          label: {
+            '/zh-tw/': '註記',
+            '/': 'Note'
+          }
+        },
+        tip: {
+          label: {
+            '/zh-tw/': '小提示',
+            '/': 'Tip'
+          }
+        },
+        warning: {
+          label: {
+            '/zh-tw/': '警告',
+            '/': 'Warning'
+          }
+        },
+        attention: {
+          label: {
+            '/zh-tw/': '注意!',
+            '/': 'Attention!'
+          }
+        }
+      }
     };
+    window.$docsify.customPageTitle = {
+      prefix: "Akebi-GC Wiki",      // [optional] title prefix. default: false eg: prefix: "Application"
+      suffix: "v1.1.0.0 PreREL",      // [optional] title suffix. default: false eg: suffix: "v1.0.0"
+      seprator: '|',        // [optional] seprator for title eg: title->   prefix | title | suffix
+      debug: false,      // [optional] should debug
+    }
   </script>
 
   <!-- Required -->
@@ -34,6 +68,9 @@
   <!-- Recommended -->
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/search.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/plugins/zoom-image.min.js"></script>
+  <script src="//unpkg.com/docsify-copy-code"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@sujaykumarh/docsify-plugin-title@1.x/dist/plugin.min.js"></script>
+
 </body>
 
 </html>

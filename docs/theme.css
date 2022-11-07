@@ -1,0 +1,577 @@
+  /* App
+============================================================================= */
+:root {
+    /* Color
+    ------------------------------------------------------------------------- */
+    /* Monochrome */
+    --mono-hue        : 113;
+    --mono-saturation : 0%;
+
+    /* Monochrome shades (darker) and tints (lighter) */
+    --mono-shade3     : hsl(var(--mono-hue), var(--mono-saturation), 20%); /* #333333 */
+    --mono-shade2     : hsl(var(--mono-hue), var(--mono-saturation), 30%); /* #4d4d4d */
+    --mono-shade1     : hsl(var(--mono-hue), var(--mono-saturation), 40%); /* #666666 */
+    --mono-base       : hsl(var(--mono-hue), var(--mono-saturation), 50%); /* #808080 */
+    --mono-tint1      : hsl(var(--mono-hue), var(--mono-saturation), 70%); /* #b3b3b3 */
+    --mono-tint2      : hsl(var(--mono-hue), var(--mono-saturation), 89%); /* #e3e3e3 */
+    --mono-tint3      : hsl(var(--mono-hue), var(--mono-saturation), 97%); /* #f7f7f7 */
+
+    /* Theme */
+    --theme-hue       : 204;
+    --theme-saturation: 90%;
+    --theme-lightness : 45%;
+    --theme-color     : rgb(145, 88, 175);
+
+    /* Typography
+    ------------------------------------------------------------------------- */
+    /* Modular Scale */
+    --modular-scale   : 1.333;
+
+    /* Module Scale Calculations (do not edit these) */
+    --modular-scale--2: calc(var(--modular-scale--1) / var(--modular-scale));
+    --modular-scale--1: calc(var(--modular-scale-1) / var(--modular-scale));
+    --modular-scale-1 : 1rem;
+    --modular-scale-2 : calc(var(--modular-scale-1) * var(--modular-scale));
+    --modular-scale-3 : calc(var(--modular-scale-2) * var(--modular-scale));
+    --modular-scale-4 : calc(var(--modular-scale-3) * var(--modular-scale));
+    --modular-scale-5 : calc(var(--modular-scale-4) * var(--modular-scale));
+
+    /* Font size */
+    --font-size-xxxl  : var(--modular-scale-5);
+    --font-size-xxl   : var(--modular-scale-4);
+    --font-size-xl    : var(--modular-scale-3);
+    --font-size-l     : var(--modular-scale-2);
+    --font-size-m     : var(--modular-scale-1);
+    --font-size-s     : var(--modular-scale--1);
+    --font-size-xs    : var(--modular-scale--2);
+
+    /* Utility
+    ------------------------------------------------------------------------- */
+    /* Borders */
+    --border-radius-s : ;
+    --border-radius-m : ;
+    --border-radius-l : ;
+
+    /* Animations and transitions */
+    --duration-slow   : 1s;
+    --duration-medium : 0.5s;
+    --duration-fast   : 0.25s;
+
+    /* Misc
+    ------------------------------------------------------------------------- */
+    /* Spinner */
+    --spinner-size               : 60px;
+    --spinner-track-width        : 4px;
+    --spinner-track-color        : rgba(255, 0, 0, 0.15);
+    --spinner-transition-duration: var(--duration-medium);
+}
+
+/* Base
+============================================================================= */
+:root {
+    --base-background-color: #222;
+    --base-color           : #DDD;
+    --base-font-family     : -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    --base-font-size       : 24px;
+    --base-font-weight     : normal;
+    --base-letter-spacing  : ;
+    --base-line-height     : 1.7;
+
+    /* Emoji */
+    --emoji-size           : calc(var(--base-line-height) * 1em);
+
+    /* Horizontal Rule */
+    --hr-border            : 1px solid var(--mono-tint2);
+
+    /* Mark */
+    --mark-background      : #ffecb3;
+    --mark-color           : ;
+
+    /* Preformatted */
+    --pre-font-family      : var(--code-font-family);
+    --pre-font-size        : var(--code-font-size);
+    --pre-font-weight      : normal;
+    --pre-line-height      : ;
+
+    /* Selection */
+    --selection-color      : #b4d5fe;
+
+    /* Small */
+    --small-font-size      : var(--font-size-s);
+
+    /* Strong */
+    --strong-color         : var(--heading-color);
+    --strong-font-weight   : 600;
+
+    /* Sub/Sup */
+    --subsup-font-size     : var(--font-size-s);
+}
+
+/* Content
+============================================================================= */
+:root {
+    --content-max-width                 : 55em;
+
+    /* Blockquote */
+    --blockquote-background             : var(--mono-tint3);
+    --blockquote-border-color           : ;
+    --blockquote-border-style           : solid;
+    --blockquote-border-width           : ;
+    --blockquote-border-radius          : var(--border-radius-m);
+    --blockquote-color                  : ;
+    --blockquote-em-font-family         : ;
+    --blockquote-em-font-size           : ;
+    --blockquote-em-font-style          : ;
+    --blockquote-em-font-weight         : normal;
+    --blockquote-font-family            : ;
+    --blockquote-font-size              : ;
+    --blockquote-font-style             : ;
+    --blockquote-font-weight            : normal;
+    --blockquote-quotes-close           : ;
+    --blockquote-quotes-color           : ;
+    --blockquote-quotes-font-family     : ;
+    --blockquote-quotes-font-size       : ;
+    --blockquote-quotes-open            : ;
+    --blockquote-padding                : 1.5em;
+
+    /* Code */
+    --code-font-family                  : Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+    --code-font-size                    : calc(var(--font-size-m) * 0.95);
+    --code-font-weight                  : normal;
+    --code-tab-size                     : 4;
+
+    --code-block-border-radius          : var(--border-radius-m);
+    --code-block-line-height            : var(--base-line-height);
+    --code-block-margin                 : 1em 0;
+    --code-block-padding                : 1.75em 1.5em 1.5em 1.5em;
+
+    --code-inline-background            : var(--code-theme-background);
+    --code-inline-border-radius         : var(--border-radius-s);
+    --code-inline-color                 : var(--code-theme-text);
+    --code-inline-margin                : 0 0.15em;
+    --code-inline-padding               : 0.125em 0.4em;
+
+    --code-theme-background             : var(--mono-tint3);
+    --code-theme-comment                : ;
+    --code-theme-function               : ;
+    --code-theme-keyword                : ;
+    --code-theme-operator               : ;
+    --code-theme-punctuation            : ;
+    --code-theme-selection              : ;
+    --code-theme-selector               : ;
+    --code-theme-tag                    : ;
+    --code-theme-text                   : ;
+    --code-theme-variable               : ;
+
+    /* Headings */
+    --heading-color                     : var(--mono-shade3);
+    --heading-font-family               : ;
+    --heading-font-weight               : ;
+    --heading-margin                    : 2.5rem 0 0;
+    --heading-padding                   : ;
+    --heading-h1-border-color           : ;
+    --heading-h1-border-style           : solid;
+    --heading-h1-border-width           : ;
+    --heading-h1-color                  : ;
+    --heading-h1-font-family            : ;
+    --heading-h1-font-size              : var(--font-size-xxl);
+    --heading-h1-font-weight            : ;
+    --heading-h1-margin                 : ;
+    --heading-h1-padding                : ;
+    --heading-h2-border-color           : ;
+    --heading-h2-border-style           : solid;
+    --heading-h2-border-width           : ;
+    --heading-h2-color                  : ;
+    --heading-h2-font-family            : ;
+    --heading-h2-font-size              : var(--font-size-xl);
+    --heading-h2-font-weight            : ;
+    --heading-h2-margin                 : ;
+    --heading-h2-padding                : ;
+    --heading-h3-border-color           : ;
+    --heading-h3-border-style           : solid;
+    --heading-h3-border-width           : ;
+    --heading-h3-color                  : ;
+    --heading-h3-font-family            : ;
+    --heading-h3-font-size              : var(--font-size-l);
+    --heading-h3-font-weight            : ;
+    --heading-h3-margin                 : ;
+    --heading-h3-padding                : ;
+    --heading-h4-border-color           : ;
+    --heading-h4-border-style           : solid;
+    --heading-h4-border-width           : ;
+    --heading-h4-color                  : ;
+    --heading-h4-font-family            : ;
+    --heading-h4-font-size              : var(--font-size-m);
+    --heading-h4-font-weight            : ;
+    --heading-h4-margin                 : ;
+    --heading-h4-padding                : ;
+
+    --heading-h5-border-color           : ;
+    --heading-h5-border-style           : solid;
+    --heading-h5-border-width           : ;
+    --heading-h5-color                  : ;
+    --heading-h5-font-family            : ;
+    --heading-h5-font-size              : var(--font-size-s);
+    --heading-h5-font-weight            : ;
+    --heading-h5-margin                 : ;
+    --heading-h5-padding                : ;
+
+    --heading-h6-border-color           : ;
+    --heading-h6-border-style           : solid;
+    --heading-h6-border-width           : ;
+    --heading-h6-color                  : ;
+    --heading-h6-font-family            : ;
+    --heading-h6-font-size              : var(--font-size-xs);
+    --heading-h6-font-weight            : ;
+    --heading-h6-margin                 : ;
+    --heading-h6-padding                : ;
+
+    /* Keyboard */
+    --kbd-background                    : var(--mono-tint3);
+    --kbd-border                        : ;
+    --kbd-border-radius                 : var(--border-radius-m);
+    --kbd-color                         : ;
+    --kbd-font-size                     : ;
+    --kbd-margin                        : 0 0.3em;
+    --kbd-min-width                     : 2.5em;
+    --kbd-padding                       : 0.65em 0.5em;
+
+    /* Links */
+    --link-border-bottom                : ;
+    --link-border-bottom--hover         : ;
+    --link-color                        : ;
+    --link-color--hover                 : ;
+    --link-text-decoration              : underline;
+    --link-text-decoration--hover       : ;
+    --link-text-decoration-color        : ;
+    --link-text-decoration-color--hover : ;
+
+    /* Notice */
+    --notice-background                 : var(--mono-tint3);
+    --notice-border-color               : ;
+    --notice-border-radius              : var(--border-radius-m);
+    --notice-border-style               : solid;
+    --notice-border-width               : ;
+    --notice-color                      : ;
+    --notice-font-family                : ;
+    --notice-font-weight                : normal;
+    --notice-padding                    : 1em 1.5em;
+
+    /* Notice - Pseudo */
+    --notice-before-background          : ;
+    --notice-before-border-radius       : ;
+    --notice-before-color               : ;
+    --notice-before-content             : ;
+    --notice-before-font-family         : ;
+    --notice-before-font-size           : ;
+    --notice-before-font-weight         : normal;
+    --notice-before-height              : ;
+    --notice-before-left                : ;
+    --notice-before-line-height         : ;
+    --notice-before-margin              : ;
+    --notice-before-padding             : ;
+    --notice-before-position            : ;
+    --notice-before-top                 : ;
+    --notice-before-width               : ;
+
+    /* Notice - Important */
+    --notice-important-background       : ;
+    --notice-important-border-color     : ;
+    --notice-important-border-style     : ;
+    --notice-important-border-width     : ;
+    --notice-important-color            : ;
+
+    /* Notice - Important Pseudo */
+    --notice-important-before-background: ;
+    --notice-important-before-color     : ;
+    --notice-important-before-content   : ;
+
+    /* Notice - Tip */
+    --notice-tip-background             : ;
+    --notice-tip-border-color           : ;
+    --notice-tip-border-style           : ;
+    --notice-tip-border-width           : ;
+    --notice-tip-color                  : ;
+
+    /* Notice - Tip Pseudo */
+    --notice-tip-before-background      : ;
+    --notice-tip-before-color           : ;
+    --notice-tip-before-content         : ;
+
+    /* Tables */
+    --table-body-border-color           : ;
+    --table-body-border-width           : ;
+    --table-cell-border-color           : ;
+    --table-cell-border-width           : ;
+    --table-cell-padding                : 0.75em 0.5em;
+    --table-head-background             : ;
+    --table-head-border-color           : var(--table-cell-border-color);
+    --table-head-border-width           : ;
+    --table-head-font-weight            : var(--strong-font-weight);
+    --table-row-even-background         : ;
+    --table-row-odd-background          : var(--mono-tint3);
+}
+
+.cover {align-items: start; }
+/* Cover
+============================================================================= */
+:root {
+    --cover-color                                      : ;
+    --cover-margin                                     : 0 0;
+    --cover-max-width                                  : 100em;
+    --cover-text-align                                 : left;
+
+    /* Background */
+    --cover-background-blend-mode                      : ;
+    --cover-background-color                           : var(--base-background-color);
+    --cover-background-image                           : url("https://i.imgur.com/oJWm8n7.jpg");
+    --cover-background-mask-color                      : var(--base-background-color);
+    --cover-background-mask-opacity                    : 0.8;
+    --cover-background-mask-visibility                 : ;
+    --cover-background-position                        : center center;
+    --cover-background-repeat                          : no-repeat;
+    --cover-background-size                            : ;
+
+    /* Blockquote (Subtitle) */
+    --cover-blockquote-color                           : ;
+    --cover-blockquote-font-size                       : var(--font-size-l);
+
+    /* Border */
+    --cover-border-inset                               : ;
+    --cover-border-color                               : var(--theme-color);
+    --cover-border-width                               : ;
+
+    /* Buttons */
+    --cover-button-background                          : ;
+    --cover-button-background--hover                   : ;
+    --cover-button-border                              : 1px solid var(--theme-color);
+    --cover-button-border--hover                       : ;
+    --cover-button-border-radius                       : var(--border-radius-m);
+    --cover-button-box-shadow                          : ;
+    --cover-button-box-shadow--hover                   : ;
+    --cover-button-color                               : var(--theme-color);
+    --cover-button-color--hover                        : ;
+    --cover-button-padding                             : 0.5em 2rem;
+    --cover-button-text-decoration                     : none;
+    --cover-button-text-decoration--hover              : ;
+    --cover-button-text-decoration-color               : ;
+    --cover-button-text-decoration-color--hover        : ;
+    --cover-button-transition                          : all var(--duration-fast) ease-in-out;
+
+    /* Buttons - Primary */
+    --cover-button-primary-background                  : var(--theme-color);
+    --cover-button-primary-background--hover           : ;
+    --cover-button-primary-border                      : 1px solid var(--theme-color);
+    --cover-button-primary-border--hover               : ;
+    --cover-button-primary-box-shadow                  : ;
+    --cover-button-primary-box-shadow--hover           : ;
+    --cover-button-primary-color                       : #fff;
+    --cover-button-primary-color--hover                : ;
+    --cover-button-primary-text-decoration             : ;
+    --cover-button-primary-text-decoration--hover      : ;
+    --cover-button-primary-text-decoration-color       : ;
+    --cover-button-primary-text-decoration-color--hover: ;
+
+    /* Heading */
+    --cover-heading-color                              : var(--theme-color);
+    --cover-heading-font-size                          : var(--font-size-xxl);
+    --cover-heading-font-size-min                      : ;
+    --cover-heading-font-size-max                      : ;
+    --cover-heading-font-weight                        : bold;
+
+    /* Links */
+    --cover-link-border-bottom                         : ;
+    --cover-link-border-bottom--hover                  : ;
+    --cover-link-color                                 : ;
+    --cover-link-color--hover                          : ;
+    --cover-link-text-decoration                       : underline;
+    --cover-link-text-decoration--hover                : ;
+    --cover-link-text-decoration-color                 : ;
+    --cover-link-text-decoration-color--hover          : ;
+}
+.app-nav {right: 90px; }
+.app-nav.no-badge {right: 90px; }
+/* Navbar
+============================================================================= */
+:root {
+    /* Root */
+    --navbar-root-background                        : #FFF;
+    --navbar-root-background--active                : ;
+    --navbar-root-background--hover                 : ;
+    --navbar-root-border-color                      : ;
+    --navbar-root-border-color--active              : ;
+    --navbar-root-border-color--hover               : ;
+    --navbar-root-border-radius                     : ;
+    --navbar-root-border-style                      : ;
+    --navbar-root-border-style--active              : ;
+    --navbar-root-border-style--hover               : ;
+    --navbar-root-border-width                      : ;
+    --navbar-root-color                             : ;
+    --navbar-root-color--active                     : ;
+    --navbar-root-color--hover                      : ;
+    --navbar-root-margin                            : 0 0 0 1.5em;
+    --navbar-root-padding                           : ;
+    --navbar-root-transition                        : all var(--duration-fast);
+    --navbar-root-text-decoration                   : ;
+    --navbar-root-text-decoration--active           : ;
+    --navbar-root-text-decoration--hover            : ;
+    --navbar-root-text-decoration-color             : ;
+    --navbar-root-text-decoration-color--active     : ;
+    --navbar-root-text-decoration-color--hover      : ;
+
+    /* Menus */
+    --navbar-menu-background                        : var(--base-background-color);
+    --navbar-menu-border-color                      : var(--theme-color);
+    --navbar-menu-border-radius                     : var(--border-radius-m);
+    --navbar-menu-border-width                      : ;
+    --navbar-menu-box-shadow                        : rgba(45,45,45,0.05) 0px 0px 1px, rgba(49,49,49,0.05) 0px 1px 2px, rgba(42,42,42,0.05) 0px 2px 4px, rgba(32,32,32,0.05) 0px 4px 8px, rgba(49,49,49,0.05) 0px 8px 16px, rgba(35,35,35,0.05) 0px 16px 32px;
+    --navbar-menu-padding                           : 0.75em;
+    --navbar-menu-transition                        : all var(--duration-fast);
+
+    /* Menu Root */
+    --navbar-menu-root-background                   : ;
+    --navbar-menu-root-background--active           : ;
+    --navbar-menu-root-background--hover            : ;
+    --navbar-menu-root-padding                      : ;
+
+    /* Menu Links */
+    --navbar-menu-link-background                   : ;
+    --navbar-menu-link-background--active           : ;
+    --navbar-menu-link-background--hover            : ;
+    --navbar-menu-link-border-color                 : ;
+    --navbar-menu-link-border-color--active         : ;
+    --navbar-menu-link-border-color--hover          : ;
+    --navbar-menu-link-border-radius                : ;
+    --navbar-menu-link-border-style                 : ;
+    --navbar-menu-link-border-style--active         : ;
+    --navbar-menu-link-border-style--hover          : ;
+    --navbar-menu-link-border-width                 : ;
+    --navbar-menu-link-color                        : ;
+    --navbar-menu-link-color--active                : ;
+    --navbar-menu-link-color--hover                 : ;
+    --navbar-menu-link-margin                       : 0.75em 0.5em;
+    --navbar-menu-link-padding                      : 0.2em 0;
+    --navbar-menu-link-text-decoration              : ;
+    --navbar-menu-link-text-decoration--active      : ;
+    --navbar-menu-link-text-decoration--hover       : ;
+    --navbar-menu-link-text-decoration-color        : ;
+    --navbar-menu-link-text-decoration-color--active: ;
+    --navbar-menu-link-text-decoration-color--hover : ;
+}
+
+/* Sidebar
+============================================================================= */
+:root {
+    --sidebar-background                          : var(--base-background-color);
+    --sidebar-border-color                        : ;
+    --sidebar-border-width                        : 0;
+    --sidebar-padding                             : 0 25px;
+    --sidebar-transition-duration                 : var(--duration-fast);
+    --sidebar-width                               : 17rem;
+
+    /* Name */
+    --sidebar-name-background                     : ;
+    --sidebar-name-color                          : ;
+    --sidebar-name-font-family                    : ;
+    --sidebar-name-font-size                      : var(--font-size-l);
+    --sidebar-name-font-weight                    : normal;
+    --sidebar-name-margin                         : 1.5rem 0 0;
+    --sidebar-name-padding                        : ;
+    --sidebar-name-text-align                     : center;
+
+    /* Nav Headings */
+    --sidebar-nav-strong-border-color             : var(--sidebar-border-color);
+    --sidebar-nav-strong-border-width             : ;
+    --sidebar-nav-strong-color                    : var(--heading-color);
+    --sidebar-nav-strong-font-size                : ;
+    --sidebar-nav-strong-font-weight              : var(--strong-font-weight);
+    --sidebar-nav-strong-margin                   : 1.5em 0 0.5em;
+    --sidebar-nav-strong-padding                  : 0.25em 0;
+    --sidebar-nav-strong-text-transform           : ;
+
+    /* Nav Container */
+    --sidebar-nav-background                      : ;
+    --sidebar-nav-indent                          : 1em;
+    --sidebar-nav-margin                          : 1.5rem 0 0;
+    --sidebar-nav-padding                         : ;
+
+    /* Nav Links */
+    --sidebar-nav-link-background                 : ;
+    --sidebar-nav-link-background--active         : ;
+    --sidebar-nav-link-background--hover          : ;
+    --sidebar-nav-link-border-color               : ;
+    --sidebar-nav-link-border-color--active       : ;
+    --sidebar-nav-link-border-color--hover        : ;
+    --sidebar-nav-link-border-radius              : ;
+    --sidebar-nav-link-border-style               : solid;
+    --sidebar-nav-link-border-style--active       : ;
+    --sidebar-nav-link-border-style--hover        : ;
+    --sidebar-nav-link-border-width               : 0;
+    --sidebar-nav-link-border-width--active       : ;
+    --sidebar-nav-link-border-width--hover        : ;
+    --sidebar-nav-link-color                      : var(--base-color);
+    --sidebar-nav-link-color--active              : ;
+    --sidebar-nav-link-color--hover               : ;
+    --sidebar-nav-link-font-weight                : normal;
+    --sidebar-nav-link-font-weight--active        : ;
+    --sidebar-nav-link-font-weight--hover         : ;
+    --sidebar-nav-link-margin                     : ;
+    --sidebar-nav-link-padding                    : 0.25em 0;
+    --sidebar-nav-link-text-decoration            : ;
+    --sidebar-nav-link-text-decoration--active    : underline;
+    --sidebar-nav-link-text-decoration--hover     : underline;
+    --sidebar-nav-link-text-decoration-color      : ;
+    --sidebar-nav-link-transition                 : ;
+
+    /* Nav Links - Pseudo Content */
+    --sidebar-nav-link-before-content             : ;
+    --sidebar-nav-link-before-content--active     : ;
+    --sidebar-nav-link-before-content-l1          : ;
+    --sidebar-nav-link-before-content-l1--active  : ;
+    --sidebar-nav-link-before-content-l2          : ;
+    --sidebar-nav-link-before-content-l2--active  : ;
+    --sidebar-nav-link-before-content-l3          : ;
+    --sidebar-nav-link-before-content-l3--active  : ;
+    --sidebar-nav-link-before-content-l4          : ;
+    --sidebar-nav-link-before-content-l4--active  : ;
+
+    /* Nav Links - Pseudo Style */
+    --sidebar-nav-link-before-color               : ;
+    --sidebar-nav-link-before-color--active       : ;
+    --sidebar-nav-link-before-color-l1            : ;
+    --sidebar-nav-link-before-color-l1--active    : ;
+    --sidebar-nav-link-before-color-l2            : ;
+    --sidebar-nav-link-before-color-l2--active    : ;
+    --sidebar-nav-link-before-color-l3            : ;
+    --sidebar-nav-link-before-color-l3--active    : ;
+    --sidebar-nav-link-before-color-l4            : ;
+    --sidebar-nav-link-before-color-l4--active    : ;
+    --sidebar-nav-link-before-margin              : 0 0.35em 0 0;
+    --sidebar-nav-link-before-margin-l1           : ;
+    --sidebar-nav-link-before-margin-l2           : ;
+    --sidebar-nav-link-before-margin-l3           : ;
+    --sidebar-nav-link-before-margin-l4           : ;
+
+    /* Nav Page Links */
+    --sidebar-nav-pagelink-background             : ;
+    --sidebar-nav-pagelink-background--active     : ;
+    --sidebar-nav-pagelink-background--collapse   : ;
+    --sidebar-nav-pagelink-background--loaded     : ;
+    --sidebar-nav-pagelink-padding                : ;
+    --sidebar-nav-pagelink-transition             : var(--sidebar-nav-link-transition);
+
+    /* Toggle */
+    --sidebar-toggle-background                   : ;
+    --sidebar-toggle-border-color                 : ;
+    --sidebar-toggle-border-radius                : var(--border-radius-s);
+    --sidebar-toggle-border-style                 : solid;
+    --sidebar-toggle-border-width                 : 0;
+    --sidebar-toggle-height                       : 36px;
+    --sidebar-toggle-icon-color                   : var(--base-color);
+    --sidebar-toggle-icon-height                  : 10px;
+    --sidebar-toggle-icon-stroke-width            : 1px;
+    --sidebar-toggle-icon-width                   : 16px;
+    --sidebar-toggle-offset-left                  : 0;
+    --sidebar-toggle-offset-top                   : calc(35px - (var(--sidebar-toggle-height) / 2));
+    --sidebar-toggle-width                        : 44px;
+}
