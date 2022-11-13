@@ -1,9 +1,14 @@
 <!-- _sidebar_.md -->
-英文
+
 * [Home](/README.md "Home")
 * [Building](/Building.md "Building")
 
--
+-------
 - Links:
-- [Github](https://github.com/jhildenbiddle/docsify-themeable)
-- [NPM](https://www.npmjs.com/package/docsify-themeable)
+- [Github(Wiki)](https://github.com/xTaiwanPingLord/Akebi-GC-Wiki)
+- [Github(Akebi)](https://github.com/Taiga74164/Akebi-GC)
+
+-------
+- Language:
+- [English](/ "Home")
+- [繁體中文](/zh-tw/ "主頁")
