@@ -11,6 +11,7 @@
   <title></title>
 
   <!-- Theme: Simple Dark -->
+  <link rel="stylesheet" href="https://unpkg.com/docsify-themeable/dist/css/theme-simple.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable@0/dist/css/theme-simple-dark.css">
   <link rel="stylesheet" href="theme.css">
 
@@ -22,40 +23,17 @@
   <script>
     // Docsify Configuration
     window.$docsify = {
+      name: "Akebi GC",
       loadSidebar: true,
       loadNavbar: true,
+      maxLevel: 3,
+      subMaxLevel: 3,
       coverpage: ['/', '/zh-tw/'],
-      defaultTheme: 'dark',
-      'flexible-alerts': {
-        note: {
-          label: {
-            '/zh-tw/': '註記',
-            '/': 'Note'
-          }
-        },
-        tip: {
-          label: {
-            '/zh-tw/': '小提示',
-            '/': 'Tip'
-          }
-        },
-        warning: {
-          label: {
-            '/zh-tw/': '警告',
-            '/': 'Warning'
-          }
-        },
-        attention: {
-          label: {
-            '/zh-tw/': '注意!',
-            '/': 'Attention!'
-          }
-        }
-      }
+      defaultTheme: 'dark'
     };
     window.$docsify.customPageTitle = {
       prefix: "Akebi-GC Wiki",      // [optional] title prefix. default: false eg: prefix: "Application"
-      suffix: "v1.1.0.0 PreREL",      // [optional] title suffix. default: false eg: suffix: "v1.0.0"
+      suffix: "v1.1.0 PreREL",      // [optional] title suffix. default: false eg: suffix: "v1.0.0"
       seprator: '|',        // [optional] seprator for title eg: title->   prefix | title | suffix
       debug: false,      // [optional] should debug
     }

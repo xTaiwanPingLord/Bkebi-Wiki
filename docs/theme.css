@@ -48,9 +48,9 @@
     /* Utility
     ------------------------------------------------------------------------- */
     /* Borders */
-    --border-radius-s : ;
-    --border-radius-m : ;
-    --border-radius-l : ;
+    --border-radius-s : 0.2em;
+    --border-radius-m : 0.5em;
+    --border-radius-l : 2em;
 
     /* Animations and transitions */
     --duration-slow   : 1s;
@@ -110,10 +110,10 @@
 /* Content
 ============================================================================= */
 :root {
-    --content-max-width                 : 55em;
+    /* --content-max-width                 : 55em; */
 
     /* Blockquote */
-    --blockquote-background             : var(--mono-tint3);
+    /* --blockquote-background             : var(--mono-tint3);
     --blockquote-border-color           : ;
     --blockquote-border-style           : solid;
     --blockquote-border-width           : ;
@@ -132,7 +132,7 @@
     --blockquote-quotes-font-family     : ;
     --blockquote-quotes-font-size       : ;
     --blockquote-quotes-open            : ;
-    --blockquote-padding                : 1.5em;
+    --blockquote-padding                : 1.5em; */
 
     /* Code */
     --code-font-family                  : Inconsolata, Consolas, Menlo, Monaco, "Andale Mono WT", "Andale Mono", "Lucida Console", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
@@ -145,13 +145,13 @@
     --code-block-margin                 : 1em 0;
     --code-block-padding                : 1.75em 1.5em 1.5em 1.5em;
 
-    --code-inline-background            : var(--code-theme-background);
+    --code-inline-background            : #080808;
     --code-inline-border-radius         : var(--border-radius-s);
     --code-inline-color                 : var(--code-theme-text);
     --code-inline-margin                : 0 0.15em;
     --code-inline-padding               : 0.125em 0.4em;
 
-    --code-theme-background             : var(--mono-tint3);
+    --code-theme-background             : #080808;
     --code-theme-comment                : ;
     --code-theme-function               : ;
     --code-theme-keyword                : ;
@@ -164,7 +164,7 @@
     --code-theme-variable               : ;
 
     /* Headings */
-    --heading-color                     : var(--mono-shade3);
+    /* --heading-color                     : var(--mono-shade3);
     --heading-font-family               : ;
     --heading-font-weight               : ;
     --heading-margin                    : 2.5rem 0 0;
@@ -224,30 +224,30 @@
     --heading-h6-font-size              : var(--font-size-xs);
     --heading-h6-font-weight            : ;
     --heading-h6-margin                 : ;
-    --heading-h6-padding                : ;
+    --heading-h6-padding                : ; */
 
     /* Keyboard */
-    --kbd-background                    : var(--mono-tint3);
+    /* --kbd-background                    : var(--mono-tint3);
     --kbd-border                        : ;
     --kbd-border-radius                 : var(--border-radius-m);
     --kbd-color                         : ;
     --kbd-font-size                     : ;
     --kbd-margin                        : 0 0.3em;
     --kbd-min-width                     : 2.5em;
-    --kbd-padding                       : 0.65em 0.5em;
+    --kbd-padding                       : 0.65em 0.5em; */
 
     /* Links */
-    --link-border-bottom                : ;
+    /* --link-border-bottom                : ;
     --link-border-bottom--hover         : ;
     --link-color                        : ;
     --link-color--hover                 : ;
     --link-text-decoration              : underline;
     --link-text-decoration--hover       : ;
     --link-text-decoration-color        : ;
-    --link-text-decoration-color--hover : ;
+    --link-text-decoration-color--hover : ; */
 
     /* Notice */
-    --notice-background                 : var(--mono-tint3);
+    /* --notice-background                 : var(--mono-tint3);
     --notice-border-color               : ;
     --notice-border-radius              : var(--border-radius-m);
     --notice-border-style               : solid;
@@ -255,10 +255,10 @@
     --notice-color                      : ;
     --notice-font-family                : ;
     --notice-font-weight                : normal;
-    --notice-padding                    : 1em 1.5em;
+    --notice-padding                    : 1em 1.5em; */
 
     /* Notice - Pseudo */
-    --notice-before-background          : ;
+    /* --notice-before-background          : ;
     --notice-before-border-radius       : ;
     --notice-before-color               : ;
     --notice-before-content             : ;
@@ -272,34 +272,34 @@
     --notice-before-padding             : ;
     --notice-before-position            : ;
     --notice-before-top                 : ;
-    --notice-before-width               : ;
+    --notice-before-width               : ; */
 
     /* Notice - Important */
-    --notice-important-background       : ;
+    /* --notice-important-background       : ;
     --notice-important-border-color     : ;
     --notice-important-border-style     : ;
     --notice-important-border-width     : ;
-    --notice-important-color            : ;
+    --notice-important-color            : ; */
 
     /* Notice - Important Pseudo */
-    --notice-important-before-background: ;
+    /* --notice-important-before-background: ;
     --notice-important-before-color     : ;
-    --notice-important-before-content   : ;
+    --notice-important-before-content   : ; */
 
     /* Notice - Tip */
-    --notice-tip-background             : ;
+    /* --notice-tip-background             : ;
     --notice-tip-border-color           : ;
     --notice-tip-border-style           : ;
     --notice-tip-border-width           : ;
-    --notice-tip-color                  : ;
+    --notice-tip-color                  : ; */
 
     /* Notice - Tip Pseudo */
-    --notice-tip-before-background      : ;
+    /* --notice-tip-before-background      : ;
     --notice-tip-before-color           : ;
-    --notice-tip-before-content         : ;
+    --notice-tip-before-content         : ; */
 
     /* Tables */
-    --table-body-border-color           : ;
+    /* --table-body-border-color           : ;
     --table-body-border-width           : ;
     --table-cell-border-color           : ;
     --table-cell-border-width           : ;
@@ -309,7 +309,7 @@
     --table-head-border-width           : ;
     --table-head-font-weight            : var(--strong-font-weight);
     --table-row-even-background         : ;
-    --table-row-odd-background          : var(--mono-tint3);
+    --table-row-odd-background          : var(--mono-tint3); */
 }
 
 .cover {align-items: start; }
@@ -395,7 +395,7 @@
 ============================================================================= */
 :root {
     /* Root */
-    --navbar-root-background                        : #FFF;
+    /* --navbar-root-background                        : #FFF;
     --navbar-root-background--active                : ;
     --navbar-root-background--hover                 : ;
     --navbar-root-border-color                      : ;
@@ -417,7 +417,7 @@
     --navbar-root-text-decoration--hover            : ;
     --navbar-root-text-decoration-color             : ;
     --navbar-root-text-decoration-color--active     : ;
-    --navbar-root-text-decoration-color--hover      : ;
+    --navbar-root-text-decoration-color--hover      : ; */
 
     /* Menus */
     --navbar-menu-background                        : var(--base-background-color);
@@ -462,103 +462,38 @@
 /* Sidebar
 ============================================================================= */
 :root {
-    --sidebar-background                          : var(--base-background-color);
+    --sidebar-background                          : rgba(145, 88, 175, 0.1);
     --sidebar-border-color                        : ;
     --sidebar-border-width                        : 0;
     --sidebar-padding                             : 0 25px;
     --sidebar-transition-duration                 : var(--duration-fast);
-    --sidebar-width                               : 17rem;
+    --sidebar-width                               : 16rem;
 
     /* Name */
     --sidebar-name-background                     : ;
-    --sidebar-name-color                          : ;
+    --sidebar-name-color                          : rgb(145, 88, 175);
     --sidebar-name-font-family                    : ;
-    --sidebar-name-font-size                      : var(--font-size-l);
-    --sidebar-name-font-weight                    : normal;
+    --sidebar-name-font-size                      : var(--font-size-xl);
+    --sidebar-name-font-weight                    : bold;
     --sidebar-name-margin                         : 1.5rem 0 0;
     --sidebar-name-padding                        : ;
     --sidebar-name-text-align                     : center;
 
     /* Nav Headings */
-    --sidebar-nav-strong-border-color             : var(--sidebar-border-color);
+    /* --sidebar-nav-strong-border-color             : var(--sidebar-border-color);
     --sidebar-nav-strong-border-width             : ;
     --sidebar-nav-strong-color                    : var(--heading-color);
     --sidebar-nav-strong-font-size                : ;
     --sidebar-nav-strong-font-weight              : var(--strong-font-weight);
     --sidebar-nav-strong-margin                   : 1.5em 0 0.5em;
     --sidebar-nav-strong-padding                  : 0.25em 0;
-    --sidebar-nav-strong-text-transform           : ;
+    --sidebar-nav-strong-text-transform           : ; */
 
     /* Nav Container */
-    --sidebar-nav-background                      : ;
+    /* --sidebar-nav-background                      : ;
     --sidebar-nav-indent                          : 1em;
     --sidebar-nav-margin                          : 1.5rem 0 0;
-    --sidebar-nav-padding                         : ;
-
-    /* Nav Links */
-    --sidebar-nav-link-background                 : ;
-    --sidebar-nav-link-background--active         : ;
-    --sidebar-nav-link-background--hover          : ;
-    --sidebar-nav-link-border-color               : ;
-    --sidebar-nav-link-border-color--active       : ;
-    --sidebar-nav-link-border-color--hover        : ;
-    --sidebar-nav-link-border-radius              : ;
-    --sidebar-nav-link-border-style               : solid;
-    --sidebar-nav-link-border-style--active       : ;
-    --sidebar-nav-link-border-style--hover        : ;
-    --sidebar-nav-link-border-width               : 0;
-    --sidebar-nav-link-border-width--active       : ;
-    --sidebar-nav-link-border-width--hover        : ;
-    --sidebar-nav-link-color                      : var(--base-color);
-    --sidebar-nav-link-color--active              : ;
-    --sidebar-nav-link-color--hover               : ;
-    --sidebar-nav-link-font-weight                : normal;
-    --sidebar-nav-link-font-weight--active        : ;
-    --sidebar-nav-link-font-weight--hover         : ;
-    --sidebar-nav-link-margin                     : ;
-    --sidebar-nav-link-padding                    : 0.25em 0;
-    --sidebar-nav-link-text-decoration            : ;
-    --sidebar-nav-link-text-decoration--active    : underline;
-    --sidebar-nav-link-text-decoration--hover     : underline;
-    --sidebar-nav-link-text-decoration-color      : ;
-    --sidebar-nav-link-transition                 : ;
-
-    /* Nav Links - Pseudo Content */
-    --sidebar-nav-link-before-content             : ;
-    --sidebar-nav-link-before-content--active     : ;
-    --sidebar-nav-link-before-content-l1          : ;
-    --sidebar-nav-link-before-content-l1--active  : ;
-    --sidebar-nav-link-before-content-l2          : ;
-    --sidebar-nav-link-before-content-l2--active  : ;
-    --sidebar-nav-link-before-content-l3          : ;
-    --sidebar-nav-link-before-content-l3--active  : ;
-    --sidebar-nav-link-before-content-l4          : ;
-    --sidebar-nav-link-before-content-l4--active  : ;
-
-    /* Nav Links - Pseudo Style */
-    --sidebar-nav-link-before-color               : ;
-    --sidebar-nav-link-before-color--active       : ;
-    --sidebar-nav-link-before-color-l1            : ;
-    --sidebar-nav-link-before-color-l1--active    : ;
-    --sidebar-nav-link-before-color-l2            : ;
-    --sidebar-nav-link-before-color-l2--active    : ;
-    --sidebar-nav-link-before-color-l3            : ;
-    --sidebar-nav-link-before-color-l3--active    : ;
-    --sidebar-nav-link-before-color-l4            : ;
-    --sidebar-nav-link-before-color-l4--active    : ;
-    --sidebar-nav-link-before-margin              : 0 0.35em 0 0;
-    --sidebar-nav-link-before-margin-l1           : ;
-    --sidebar-nav-link-before-margin-l2           : ;
-    --sidebar-nav-link-before-margin-l3           : ;
-    --sidebar-nav-link-before-margin-l4           : ;
-
-    /* Nav Page Links */
-    --sidebar-nav-pagelink-background             : ;
-    --sidebar-nav-pagelink-background--active     : ;
-    --sidebar-nav-pagelink-background--collapse   : ;
-    --sidebar-nav-pagelink-background--loaded     : ;
-    --sidebar-nav-pagelink-padding                : ;
-    --sidebar-nav-pagelink-transition             : var(--sidebar-nav-link-transition);
+    --sidebar-nav-padding                         : ; */
 
     /* Toggle */
     --sidebar-toggle-background                   : ;
@@ -568,9 +503,9 @@
     --sidebar-toggle-border-width                 : 0;
     --sidebar-toggle-height                       : 36px;
     --sidebar-toggle-icon-color                   : var(--base-color);
-    --sidebar-toggle-icon-height                  : 10px;
+    --sidebar-toggle-icon-height                  : 15px;
     --sidebar-toggle-icon-stroke-width            : 1px;
-    --sidebar-toggle-icon-width                   : 16px;
+    --sidebar-toggle-icon-width                   : 24px;
     --sidebar-toggle-offset-left                  : 0;
     --sidebar-toggle-offset-top                   : calc(35px - (var(--sidebar-toggle-height) / 2));
     --sidebar-toggle-width                        : 44px;

@@ -2,6 +2,7 @@
 
 * 下載 Akebi-GC
   * [從 <b>Github</b>](https://github.com/Taiga74164/Akebi-GC/releases/)
+  * [從 <b>UnknownCheats</b>](https://www.unknowncheats.me/forum/genshin-impact/512860-akebi-genshin-cheat.html)
   * [加入我們的 <b>Discord</b>](https://discord.gg/akebi)
   * 最新穩定版本: <b>v1.1.0</b>
 
