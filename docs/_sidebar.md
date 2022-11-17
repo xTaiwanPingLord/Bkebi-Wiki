@@ -1,7 +1,7 @@
 <!-- _sidebar_.md -->
 
 * [Home](/README.md "Home")
-* [Building](/Building.md "Building")
+* [Get started](/Get_started.md "Get started")
 
 -------
 - Links:

@@ -1,7 +1,7 @@
 <!-- zh-tw/_sidebar_.md -->
 
 * [主頁](/zh-tw/README.md "主頁")
-* [構建](/zh-tw/Building.md "構建")
+* [開始使用](/zh-tw/Get_started.md "開始使用")
 
 -------
 - 連結:
