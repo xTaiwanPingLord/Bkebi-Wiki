@@ -6,7 +6,8 @@
 -------
 - 連結:
 - [Github(Wiki)](https://github.com/xTaiwanPingLord/Akebi-GC-Wiki)
-- [Github(Akebi)](https://github.com/Taiga74164/Akebi-GC)
+- [Gitlab(Akebi-GC)](https://git.crepe.moe/taiga74164/Akebi-GC/-/releases/v1.1.1/)
+- [Discord](https://discord.gg/akebi)
 
 -------
 - 語言:

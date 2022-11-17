@@ -1,4 +1,5 @@
-Welcome to the Akebi-GC wiki!
-歡迎來到 Akebi-GC wiki!
+This is the website repo of [Akebi-GC wiki](https://xtaiwanpinglord.github.io/Akebi-GC-Wiki/#/)
+這是[Akebi-GC wiki](https://xtaiwanpinglord.github.io/Akebi-GC-Wiki/#/)專案的儲存庫
 
-This is the website repo of Akebi-GC wiki
+You can contribute to this wiki by contacting `xTaiwanPingLord#9960` or fork repo and create pull request.
+如果您想要為本wiki做出貢獻，你可以聯絡`xTaiwanPingLord#9960`或者fork本專案並開pull request。
