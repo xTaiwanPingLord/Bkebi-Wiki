@@ -37,7 +37,7 @@ After the game loaded, you will see a small window on the top-left corner. Press
 
 # Troubleshooting
 1. Make sure you selected the correct game location. Don't put the cheat in any genshin installation directory.
-2. If you have `MSI Afterburner` installed, open `Rivatuner static server` and open Setup, enable `Use Microsoft Det...` and hit OK. <br>
+2. If you have `MSI Afterburner` installed, open `RivaTuner Statistics Server` and open Setup, enable `Use Microsoft Det...` and hit OK. <br>
 ![](https://cdn.discordapp.com/attachments/986345462518915082/1034131428876767272/unknown.png)
 1. Update your system, drivers **especially graphics driver**. Google it if you don't know how to do it.
 2. Disable any Overlay

@@ -37,7 +37,7 @@
 
 # 無法開啟的解決方法
 1. 確認遊戲檔案位置選擇正確，並且不要把外掛放在原神的安裝資料夾內。
-2. 有安裝`MSI Afterburner`的，打開`Rivatuner static server`中，設定中最下面的那個選項把他打勾(看圖) <br>
+2. 有安裝`MSI Afterburner`的，打開`RivaTuner Statistics Server`中，設定中最下面的那個選項把他打勾(看圖) <br>
 ![](https://cdn.discordapp.com/attachments/986345462518915082/1034131428876767272/unknown.png)
 3. 更新系統、各種驅動程式，**尤其是顯示卡驅動程式**，不會的請上網搜尋。
 4. 關閉各種Overlay
