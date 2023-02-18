@@ -1,7 +1,7 @@
 <!-- Get_started.md -->
 
 # Download
-Download from top-right side of this website. Either from Gitlab or join Discord and get from `#release` is fine.
+Download from top-right side of this website. Either from GitHub or join Discord and get from `#下载-public_release ` is fine.
 
 ?> CN for China servers. OS for Europe/America/Asia/TW, HK, MO.
 
@@ -10,7 +10,7 @@ Download from top-right side of this website. Either from Gitlab or join Discord
 # Installation
 Put every file in a folder **that it is not in any genshin installation folder**. Double click `injector.exe` and grant administrator privileges.
 
-!> Make sure `injector.exe` and `CLibaray.dll` are in the same directory. Ignore warnings from antivirus <br>
+!> Make sure `injector.exe` and `libstdimpact.dll` are in the same directory. Ignore warnings from antivirus <br>
 Make sure genshin is not running when starting `injector.exe`.
 ![](https://i.imgur.com/sq4XCrY.png)
 
@@ -20,7 +20,7 @@ Make sure genshin is not running when starting `injector.exe`.
 ?> If you have no idea where you installed genshin, open official genshin launcher, click settings and check for the path just like the picture.
 ![](https://i.imgur.com/7VbrbzE.png)
 
-In the game installation directory, select `GenshinImpact.exe` or `Yuanshen.exe` and click Open. Akebi-GC will start loading, please wait patiently for the game launches。
+In the game installation directory, select `GenshinImpact.exe` or `Yuanshen.exe` and click Open. Bkebi will start loading, please wait patiently for the game launches。
 ![](https://i.imgur.com/qzcpcoS.png)
 
 !> Not `launcher.exe`!

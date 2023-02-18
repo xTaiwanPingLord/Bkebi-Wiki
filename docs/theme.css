@@ -20,7 +20,7 @@
     --theme-hue       : 204;
     --theme-saturation: 90%;
     --theme-lightness : 45%;
-    --theme-color     : rgb(145, 88, 175);
+    --theme-color     : rgb(55, 179, 177);
 
     /* Typography
     ------------------------------------------------------------------------- */
@@ -324,7 +324,7 @@
     /* Background */
     --cover-background-blend-mode                      : ;
     --cover-background-color                           : var(--base-background-color);
-    --cover-background-image                           : url("https://xtaiwanpinglord.github.io/Akebi-GC-Wiki/media/bg.jpg");
+    --cover-background-image                           : url("https://xtaiwanpinglord.github.io/Bkebi-GC-Wiki/media/bg.jpg");
     --cover-background-mask-color                      : var(--base-background-color);
     --cover-background-mask-opacity                    : 0.8;
     --cover-background-mask-visibility                 : ;
@@ -462,7 +462,7 @@
 /* Sidebar
 ============================================================================= */
 :root {
-    --sidebar-background                          : rgba(145, 88, 175, 0.1);
+    --sidebar-background                          : rgba(40, 70, 75);
     --sidebar-border-color                        : ;
     --sidebar-border-width                        : 0;
     --sidebar-padding                             : 0 25px;
@@ -471,7 +471,7 @@
 
     /* Name */
     --sidebar-name-background                     : ;
-    --sidebar-name-color                          : rgb(145, 88, 175);
+    --sidebar-name-color                          : rgb(69, 200, 191);
     --sidebar-name-font-family                    : ;
     --sidebar-name-font-size                      : var(--font-size-xl);
     --sidebar-name-font-weight                    : bold;

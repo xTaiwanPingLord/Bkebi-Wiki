@@ -1,6 +1,6 @@
 <!-- zh-tw/README.md (Home) -->
 
-# 關於Akebi-GC
+# 關於 Bkebi
 這是一個**公開、免費使用，由社群共同開發**的外掛。 
 
 ?> 你可以在右上角或左邊找到下載方式與我們的Discord群組。<br>
@@ -16,7 +16,7 @@
 > 右上角。
 
 #### 漢化或其他語言翻譯?
-> 外掛本體沒有，也不會有，請對照Wiki上的中文翻譯。
+> 在Settings內可更改Languages.
 
 #### 源碼?
 > 沒有 沒有 沒有 沒有 沒有
@@ -28,8 +28,8 @@
 #### 會不會Ban? 危不危險?
 > 目前版本不做一些危險操作，不會。下方有防Ban小技巧可參考。
 
-#### Taiga不更新了?
-> yes but actually I don't know. 就算Taiga有事情不更新了，其他貢獻者也可以嘗試繼續更新。
+#### Bkebi的開發者們不更新了?
+> yes but actually I don't know. 就算Yurri有事情不更新了，其他貢獻者也可以嘗試繼續更新。
 
 ---
 
@@ -47,26 +47,12 @@
 # 貢獻者
 ## 本Wiki
 - 主要編寫人
-  - xTaiwanPingLord (en-us/zh-tw/zh-cn)
+  - xTaiwanPingLord (en-us/zh-tw)
 - 協助編輯、翻譯
   - 沒有，如果有興趣直接Fork，開Pull request或是私訊`xTaiwanPingLord#9960`
 
-## Akebi-GC本體
-- 創始人 Founder
-  - Callow
-- 主要開發者與更新人員 Main developer and updater
-  - Taiga
-- 主要貢獻者 Contributors
-  - RyujinZX
-  - WitchGod
-  - m0nkrel
-  - Shichiha
-  - harlanx
-  - andiabrudan
-  - hellomykami
-- 其他貢獻者
-  - ![](https://i.imgur.com/utgom0J.png)
-  ![](https://i.imgur.com/PBHAPrt.png)
-  ![](https://i.imgur.com/gEbUn9j.png)
-  ![](https://i.imgur.com/79fxpgC.png)
-  ![](https://i.imgur.com/wTgijao.png)
+## Bkebi
+請查看介面中的「關於」。
+
+## Akebi-GC
+[HackMD.io](https://hackmd.io/@xTaiwanPingLord/AkebiGCContributors)

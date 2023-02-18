@@ -1,6 +1,6 @@
 <!-- README.md (Home) -->
 
-# About Akebi-GC
+# About Bkebi
 This is a **public, free-to-use** cheat developed by community.
 
 ?> You can get download links and join our Discord server from the top-right or left side of this website.<br>
@@ -16,7 +16,7 @@ You will find documentations, guides and other resources from this wiki.
 > From the top-right or left side of this website.
 
 #### Translation for other languages?
-> The cheat itself, no. However, there are translations on this wiki. Please switch to other languages (From the top-right).
+> You can change language in Settigns -> Languages.
 
 #### Source code?
 > Nope
@@ -28,8 +28,8 @@ You will find documentations, guides and other resources from this wiki.
 #### Will I get Banned?
 > No if you play it safe. There are some tips to not get banned down below.
 
-#### Taiga won't update anymore?
-> yes but actually I don't know. There are other contributors who can work on the project if Taiga is too busy and cannot update.
+#### Bkebi devs won't update anymore?
+> yes but actually I don't know. There are other contributors who can work on the project if main devs is too busy and cannot update.
 
 ---
 
@@ -51,22 +51,8 @@ DO IT ON YOUR OWN RISK. There are recommended values shared by other players in 
 - Helpers
   - None :( If you are interested, fork and create pull request or contact `xTaiwanPingLord#9960`.
 
-## Akebi-GC it self
-- Founder
-  - Callow
-- Main developer and updater
-  - Taiga
-- Main contributors
-  - RyujinZX
-  - WitchGod
-  - m0nkrel
-  - Shichiha
-  - harlanx
-  - andiabrudan
-  - hellomykami
-- Other contributors
-  - ![](https://i.imgur.com/utgom0J.png)
-  ![](https://i.imgur.com/PBHAPrt.png)
-  ![](https://i.imgur.com/gEbUn9j.png)
-  ![](https://i.imgur.com/79fxpgC.png)
-  ![](https://i.imgur.com/wTgijao.png)
+## Bkebi
+Please refer to the "About" tab in the menu.
+
+## Akebi-GC
+[HackMD.io](https://hackmd.io/@xTaiwanPingLord/AkebiGCContributors)

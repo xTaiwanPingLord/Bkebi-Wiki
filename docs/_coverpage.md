@@ -1,6 +1,6 @@
 <!-- _coverpage.md -->
 
-# Akebi-GC
+# Bkebi
 
 > Community-developed cheat for <br>
 > <b><I>certain anime game <small>OS/CN 3.2.0</small>.</I></b>

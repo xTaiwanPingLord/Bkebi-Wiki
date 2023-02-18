@@ -1,10 +1,9 @@
 <!-- _navbar_.md -->
 
-* Download Akebi-GC
-  * [From <b>Gitlab</b>](https://git.crepe.moe/taiga74164/Akebi-GC/-/releases/v1.1.1/)
-  * [From <b>UnknownCheats</b>](https://www.unknowncheats.me/forum/genshin-impact/512860-akebi-genshin-cheat.html)
-  * [Join our <b>Discord</b>](https://discord.gg/akebi)
-    Lastest stable version: <b>v1.1.1</b>
+* Download Bkebi
+  * [From <b>GitHub</b>](https://github.com/Bkebi-Group/Bkebi-GC-Release/releases)
+  * [Join our <b>Discord</b>](https://discord.gg/bkebi)
+    v1.0.3 supported version: <b>OS/CN 3.4.0</b>
 
 * Language
   * [English](/ "Home")
